@@ -1,8 +1,11 @@
 import logo from './images/Logo.svg';
 
 export default function Header() {
+    const the_style = {
+        backgroundColor: "aquamarine",
+    }
     return (
-        <>
+        <div style={the_style}>
             <img src={logo}/>
             <nav>
                 <ul>
@@ -14,6 +17,6 @@ export default function Header() {
                     <li>Log in</li>
                 </ul>
             </nav>
-        </>
+        </ div>
     )
 }
