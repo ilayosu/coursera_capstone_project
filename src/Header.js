@@ -4,6 +4,10 @@ export default function Header() {
     const the_style = {
         backgroundColor: "aquamarine",
     }
+    const list_style = {
+        display: "inline"
+    }
+    
     return (
         <div style={the_style}>
             <img src={logo}/>

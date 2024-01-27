@@ -17,14 +17,12 @@ function App() {
         <meta name="og:image" content=""/>
       </Helmet>
       <Header/>
-      <body>
-        <main>
-          <Hero/>
-          <Specials/>
-        </main>
+      <div className="everything-that-is-not-header-or-footer">
+        <Hero/>
+        <Specials/>
         <Testimonials/>
-          <About/>
-      </body>
+        <About/>
+      </div>
       <Footer/>
     </div>
   );
