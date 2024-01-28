@@ -1,0 +1,30 @@
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.the_header {
+    display: grid;
+    min-width: 727px;
+    width: 100svw;
+    min-height: 50px;
+    grid-template-areas:
+        "logo navbar";
+    font-family: "Karla";
+    font-weight: 700;
+    line-height: 18pt;
+    background-color: white;
+}
+
+.the_logo {
+    grid-area: logo;
+    margin: auto;
+}
+
+.navbar {
+    grid-area: navbar;
+}

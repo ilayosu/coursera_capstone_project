@@ -1,24 +1,21 @@
 import logo from './images/Logo.svg';
+import "./Header.css";
+import "@fontsource/markazi-text";
+import '@fontsource/karla';
 
 export default function Header() {
-    const the_style = {
-        backgroundColor: "aquamarine",
-    }
-    const list_style = {
-        display: "inline"
-    }
-    
+  
     return (
-        <div style={the_style}>
-            <img src={logo}/>
+        <div className="the_header">
+            <img src={logo} className="the_logo"/>
             <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Menu</li>
-                    <li>Reservations</li>
-                    <li>Order Online</li>
-                    <li>Log in</li>
+                <ul className="navbar">
+                    <li className="home">Home</li>
+                    <li className="about">About</li>
+                    <li className="the_menu">Menu</li>
+                    <li className="reserve">Reservations</li>
+                    <li className="order">Order Online</li>
+                    <li className="log_in">Log in</li>
                 </ul>
             </nav>
         </ div>
