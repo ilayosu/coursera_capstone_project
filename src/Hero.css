@@ -1,0 +1,21 @@
+.hero_section {
+    display: grid;
+    grid-template-rows: 40svh;
+    grid-template-areas: "the_text photo";
+}
+
+.text {
+    grid-area: the_text;
+}
+
+.real_text {
+    height: 80%;
+    background-color: #495e57;
+}
+
+.photo {
+    grid-area: photo;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
