@@ -17,8 +17,8 @@ function App() {
         <meta name="og:image" content=""/>
       </Helmet>
       <Header/>
-      <div className="everything-that-is-not-header-or-footer">
-        <Hero/>
+      <Hero />
+      <div className="everything-that-is-not-header-or-footer-or-hero">
         <Specials/>
         <Testimonials/>
         <About/>

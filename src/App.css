@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.everything-that-is-not-header-or-footer {
+.everything-that-is-not-header-or-footer-or-hero {
   margin: 0px 70px;
   display: grid;
   grid-template-columns: 1fr;
