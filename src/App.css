@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .everything-that-is-not-header-or-footer-or-hero {

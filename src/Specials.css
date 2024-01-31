@@ -1,0 +1,37 @@
+.specials_grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: minmax(40svh, 50svh);
+    grid-template-areas: "salad bruchetta dessert";
+    gap: 10svh;
+    margin-bottom: 5svh;
+    padding: 0 10svh;
+}
+
+.greek_salad {
+    grid-area: salad;
+}
+
+.bruchetta {
+    grid-area: bruchetta;
+}
+
+.lemon_dessert {
+    grid-area: dessert;
+}
+
+.title_specials {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10svh;
+    padding-bottom: 1%;
+}
+
+h1 {
+    font-family: "Markazi Text";
+    font-size: 64pt;
+}
+
+button {
+    height: 50%;
+}
