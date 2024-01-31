@@ -1,7 +1,7 @@
 .specials_grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: minmax(40svh, 55svh);
+    grid-template-rows: minmax(20svh, 55svh);
     grid-template-areas: "salad bruchetta dessert";
     gap: 10svh;
     margin-bottom: 5svh;

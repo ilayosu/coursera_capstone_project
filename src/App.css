@@ -4,8 +4,11 @@
 }
 
 .everything-that-is-not-header-or-footer-or-hero {
-  margin: 0px 70px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5fr;
+}
+
+.margin {
+  margin: 0px 70px;
 }

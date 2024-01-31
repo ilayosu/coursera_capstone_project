@@ -1,0 +1,12 @@
+.testimonial_grid {
+    background-color: #333;
+    color: white;
+}
+
+.margin_wrapper {
+    margin: 0 70px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2svw;
+    padding: 2svh 0;
+}

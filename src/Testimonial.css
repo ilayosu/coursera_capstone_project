@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-radius: 18pt;
+}
+
+.profile_picture {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.the_name {
+    margin: 1% 0;
+    font-family: "Markazi Text";
+    font-size: 24pt;
+}
+
+.stars {
+    margin: -3% 0;
+    font-size: 12pt;
+}
+
+.review {
+    font-family: "Karla";
+    font-size: 16pt;
+    margin: 5% 5%;
+}

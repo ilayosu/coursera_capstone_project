@@ -19,7 +19,7 @@ function App() {
       <Header/>
       <Hero />
       <div className="everything-that-is-not-header-or-footer-or-hero">
-        <Specials/>
+        <div className="margin"><Specials/></div>
         <Testimonials/>
         <About/>
       </div>

@@ -40,6 +40,8 @@
 
 .dish_description {
     margin-top: 0;
+    min-height: 10%;
+    max-height: 25%;
 }
 
 .name_and_price, .dish_description, .delivery {
