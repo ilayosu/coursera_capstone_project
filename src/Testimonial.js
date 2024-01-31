@@ -16,7 +16,7 @@ export default function Testimonial(props) {
 
     return (
         <div className="container">
-            {person && <img src={person.results[0].picture.thumbnail} className="profile_picture"/>}
+            {person && <img src={person.results[0].picture.large} className="profile_picture"/>}
             {person && <p className="the_name">{person.results[0].name.first} {person.results[0].name.last}</p>}
             <p className="stars">{props.rating}</p>
             <p className="review">{props.review}</p>
