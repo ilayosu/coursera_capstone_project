@@ -1,0 +1,21 @@
+.the_button {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    max-width: fit-content;
+    padding: 2% 2%;
+    border-radius: 8pt;
+    border: solid white 2px;
+    color: #fbdabb;
+}
+
+.button_text {
+    font-family: "Karla";
+    font-size: 1svw;
+    font-weight: 600;
+}
+
+.the_button:hover {
+    color: #ee9972;
+    background-color: #edefee;
+}
