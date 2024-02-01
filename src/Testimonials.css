@@ -1,6 +1,15 @@
-.testimonial_grid {
+.testimonial_grid, .testimonials_text {
     background-color: #333;
     color: white;
+}
+
+.testimonials_text {
+    font-family: "Markazi Text";
+    font-size: 40pt;
+}
+
+.testimonials_text p {
+    margin: 0;
 }
 
 .margin_wrapper {
