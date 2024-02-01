@@ -13,6 +13,7 @@
     font-family: "Karla";
     font-size: 1svw;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .the_button:hover {

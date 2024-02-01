@@ -1,7 +1,7 @@
 export default function Reservations() {
     return (
-        <div>
-            
+        <div className="reservation_form">
+
         </div>
     )
 }

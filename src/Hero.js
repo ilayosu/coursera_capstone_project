@@ -3,6 +3,7 @@ import "./Hero.css";
 import "@fontsource/markazi-text";
 import '@fontsource/karla';
 import Button from "./reusable/Button.js";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
     return (
@@ -12,7 +13,7 @@ export default function Hero() {
                     <h1>Little Lemon</h1>
                     <h3>Chicago</h3>
                     <p>We are a family owned Mediterranean restaurant, focused on traditional recepies with a modern twist</p>
-                    <Button text={"Reserve a Table"} />
+                    <Link className="no_deco_link" to="/reservation-screen"><Button text={"Reserve a Table"} /></Link>
                 </section>
                 <div className="background">
 

@@ -61,3 +61,7 @@
 .the_button p {
     margin: 0;
 }
+
+.no_deco_link {
+    text-decoration: none;
+}

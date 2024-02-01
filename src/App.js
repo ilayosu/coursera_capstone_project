@@ -15,17 +15,23 @@ function App() {
     {
       path: "/",
       element: <div>
+        <Header/>
         <Hero />
         <div className="everything-that-is-not-header-or-footer-or-hero">
         <div className="margin"><Specials/></div>
         <Testimonials/>
         <About/>
       </div>
+      <Footer/>
       </div>
     }, 
     {
       path: "/reservation-screen",
-      element: <Reservations />
+      element: <div>
+        <Header/>
+        <Reservations />
+        <Footer/>
+        </div>
     }
   ])
 
@@ -37,9 +43,7 @@ function App() {
         <meta name="og:title" content="Little Lemon Restaurant"/>
         <meta name="og:image" content=""/>
       </Helmet>
-      <Header/>
       <RouterProvider router={router} />
-      <Footer/>
     </div>
   );
 }

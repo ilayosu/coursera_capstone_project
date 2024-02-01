@@ -2,12 +2,15 @@ import logo from './images/Logo.svg';
 import "./Header.css";
 import "@fontsource/markazi-text";
 import '@fontsource/karla';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   
     return (
         <div className="the_header">
+            <Link to="/" className="no_deco_link logo_link">
             <img src={logo} className="the_logo"/>
+            </Link>
             <nav>
                 <ul className="navbar">
                     <li className="home">Home</li>

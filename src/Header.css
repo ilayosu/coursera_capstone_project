@@ -7,6 +7,10 @@ li {
     padding: 0 15px;
 }
 
+a .the_logo {
+    padding-top: auto;
+}
+
 .the_header {
     display: grid;
     min-width: 727px;
@@ -20,7 +24,7 @@ li {
     background-color: white;
 }
 
-.the_logo {
+.logo_link {
     grid-area: logo;
     margin: auto;
 }
