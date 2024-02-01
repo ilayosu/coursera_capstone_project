@@ -1,0 +1,56 @@
+.about_section {
+    display: grid;
+    grid-template-areas: "the_text photos";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 45svh;
+    max-height: 60svh;
+    background-color: #edefee;
+}
+
+.about_text {
+    grid-area: the_text;
+    width: 50%;
+    padding: auto;
+    margin: auto;
+}
+
+.about_text p {
+    margin-top: 0;
+}
+
+.photos {
+    grid-area: photos;
+    width: 50%;
+    margin-top: 5svh;
+    margin-bottom: 5svh;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+.image_bottom {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-position: 70%;
+}
+
+.image_top {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+}
+
+.image_top, .image_bottom {
+    width: 100%;
+
+} 
