@@ -6,8 +6,29 @@ import Testimonials from "./Testimonials.js";
 import About from './About.js';
 import Footer from "./Footer.js";
 import Helmet from "react-helmet";
+import Reservations from './Reservations.js';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div>
+        <Hero />
+        <div className="everything-that-is-not-header-or-footer-or-hero">
+        <div className="margin"><Specials/></div>
+        <Testimonials/>
+        <About/>
+      </div>
+      </div>
+    }, 
+    {
+      path: "/reservation-screen",
+      element: <Reservations />
+    }
+  ])
+
   return (
     <div className="App">
       <Helmet>
@@ -17,12 +38,7 @@ function App() {
         <meta name="og:image" content=""/>
       </Helmet>
       <Header/>
-      <Hero />
-      <div className="everything-that-is-not-header-or-footer-or-hero">
-        <div className="margin"><Specials/></div>
-        <Testimonials/>
-        <About/>
-      </div>
+      <RouterProvider router={router} />
       <Footer/>
     </div>
   );
