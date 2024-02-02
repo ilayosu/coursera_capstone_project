@@ -7,6 +7,7 @@
     border-radius: 8pt;
     border: solid white 2px;
     color: #fbdabb;
+    transition: 0.3s ease;
 }
 
 .button_text {
@@ -19,4 +20,5 @@
 .the_button:hover {
     color: #ee9972;
     background-color: #edefee;
+    transition: 0.3s ease;
 }

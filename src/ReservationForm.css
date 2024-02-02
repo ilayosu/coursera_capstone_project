@@ -1,0 +1,24 @@
+.reservation_form {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    font-family: "Karla";
+    font-size: 16pt;
+    margin: 0 70px;
+    gap: 0 5svw;
+}
+
+label input, label select {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+    margin-left: 5px;
+    padding: 0;
+    justify-content: center;
+    font-size: medium;
+}
+
+label {
+    display: flex;
+}
