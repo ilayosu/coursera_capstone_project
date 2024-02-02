@@ -3,22 +3,34 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
     font-family: "Karla";
-    font-size: 16pt;
-    margin: 0 70px;
+    font-size: 2svw;
+    justify-content: center;
     gap: 0 5svw;
 }
 
 label input, label select {
-    width: auto;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
     object-fit: contain;
     overflow: hidden;
     margin-left: 5px;
+    margin-top: 1svw;
     padding: 0;
     justify-content: center;
-    font-size: medium;
+    font-size: large;
+    font-family: "Karla";
+    font-weight: 700;
 }
 
 label {
     display: flex;
+    justify-content: flex-end;
+    grid-column: span 2;
+    margin: 5svh;
+    padding: 2svh;
+}
+form .hey_why_is_react_not_making_a_wrapper {
+    grid-column: 2 / span 2;
+    display: flex;
+    justify-content: center;
 }

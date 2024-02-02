@@ -3,6 +3,9 @@ footer {
     color: white;
     font-family: "Karla";
     font-size: 16pt;
+    width: 100svw;
+    position: relative;
+    bottom: 0;
 }
 
 .footer_grid {

@@ -2,7 +2,9 @@
     background-color: #333;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     max-width: fit-content;
+    height: fit-content;
     padding: 2% 2%;
     border-radius: 8pt;
     border: solid white 2px;

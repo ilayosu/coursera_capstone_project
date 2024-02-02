@@ -1,0 +1,16 @@
+.reservation_form {
+    border: 5px solid #c9c7c7;
+    border-radius: 16pt;
+    /* margin: 70px 20svw; */
+    min-height: 65svh;
+    background-color: #edefee;
+    filter: drop-shadow(5px 5px 4px black);
+}
+
+.reservation_page {
+    padding: 70px 20svw;
+    background-image: url("images/restaurant.jpg");
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 100svw;
+}

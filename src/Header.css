@@ -22,6 +22,7 @@ a .the_logo {
     font-weight: 700;
     line-height: 18pt;
     background-color: white;
+    border-bottom: 5px #333 solid;
 }
 
 .logo_link {

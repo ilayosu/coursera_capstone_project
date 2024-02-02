@@ -47,7 +47,9 @@ export default function ReservationForm() {
                     <option value="N/A">N/A</option>    
                 </select>
             </label>
-            <Button text="submit" />
+            <div className="hey_why_is_react_not_making_a_wrapper">
+            <Button text="submit"/>
+            </div>
         </form>
     )
 }
