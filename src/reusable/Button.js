@@ -3,7 +3,7 @@ import '@fontsource/karla';
 
 export default function Button(props) {
     return (
-        <div className="the_button">
+        <div className="the_button" onClick={props.customClickEvent}>
             <p className="button_text">{props.text}</p>
         </div>
     )

@@ -10,6 +10,7 @@
     border: solid white 2px;
     color: #fbdabb;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .button_text {
