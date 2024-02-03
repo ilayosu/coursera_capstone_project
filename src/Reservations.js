@@ -1,15 +1,24 @@
 import ReservationForm from "./ReservationForm"
 import "./Reservations.css";
 import background_photo from "./images/restaurant.jpg"
-import {useState, useReducer} from "react";
+import {useState, useReducer, useEffect} from "react";
 
 export default function Reservations() {
 
-    const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
     const [date, setDate] = useState(undefined);
     const [time, setTime] = useState(undefined);
     const [guestCount, setGuestCount] = useState(0);
     const [occasion, setOccasion] = useState(undefined);
+
+    const updateTimes = (availableTimes, action) => {
+        return availableTimes;
+    }
+
+    const initializeTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+
+    const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
+
+    useEffect(dispatch, [date]);
 
     return (
         <div className="reservation_page">

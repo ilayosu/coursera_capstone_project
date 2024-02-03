@@ -28,7 +28,7 @@ export default function ReservationForm(props) {
     return (
         <form className="reservation_form">
             <label className="form_date">
-                Choose the date: 
+                Choose the date:
                 <input defaultValue="" value={props.date} type="date" onInput={e => props.set_date(e.target.value)}/>
             </label>
             <label className="form_time">
