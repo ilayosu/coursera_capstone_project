@@ -12,5 +12,13 @@
     background-image: url("images/restaurant.jpg");
     background-position: 0;
     background-repeat: no-repeat;
-    background-size: 100svw;
+    background-size: cover;
+}
+
+.reservation_page h1 {
+    color: white;
+    font-family: "Markazi Text";
+    font-weight: 800;
+    margin: 0;
+    filter: drop-shadow(5px 5px 4px black);
 }

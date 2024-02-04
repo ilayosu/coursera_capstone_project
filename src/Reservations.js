@@ -2,6 +2,7 @@ import ReservationForm from "./ReservationForm"
 import "./Reservations.css";
 import background_photo from "./images/restaurant.jpg"
 import {useState, useReducer, useEffect} from "react";
+import "@fontsource/markazi-text";
 
 export default function Reservations() {
 
@@ -22,6 +23,7 @@ export default function Reservations() {
 
     return (
         <div className="reservation_page">
+            <h1>Book Now!</h1>
             <ReservationForm occasion={occasion} set_occasion={setOccasion} guestCount={guestCount} set_guestCount={setGuestCount} time={time} set_time={setTime} date={date} set_date={setDate} the_times={availableTimes} className="the_form_wrapper"/>
         </div>
     )
