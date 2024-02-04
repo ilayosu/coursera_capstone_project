@@ -8,6 +8,7 @@ import Footer from "./Footer.js";
 import Helmet from "react-helmet";
 import Reservations from './Reservations.js';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ReservationConfirmation from './ReservationConfirmation.js';
 
 function App() {
 
@@ -32,6 +33,14 @@ function App() {
         <Reservations />
         <Footer/>
         </div>
+    },
+    {
+      path: "/reservation-confirmation",
+      element: <div>
+      <Header/>
+      <ReservationConfirmation />
+      <Footer/>
+      </div>
     }
   ])
 

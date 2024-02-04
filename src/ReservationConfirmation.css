@@ -1,0 +1,6 @@
+.big_heading {
+    min-height: 60svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

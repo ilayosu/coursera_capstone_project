@@ -2,6 +2,7 @@ import Button from "./reusable/Button.js";
 import { useState, useEffect } from "react";
 import "./ReservationForm.css";
 import '@fontsource/karla';
+import { Link } from "react-router-dom";
 
 function form_valid(props) {
     return props.date != "" && props.time  != "" && props.guestCount > 0 && props.occasion != "";
@@ -10,7 +11,6 @@ function form_valid(props) {
 export default function ReservationForm(props) {
 
     const submit_handler = (e) => {
-        alert(form_valid(props));
         if (form_valid(props) === true) form_clear();
     }
 
@@ -56,7 +56,7 @@ export default function ReservationForm(props) {
                 </select>
             </label>
             <div className="hey_why_is_react_not_making_a_wrapper">
-            {(form_valid(props) === true) ? <Button type="button" text="submit" customClickEvent={submit_handler} /> : <Button 
+            {(form_valid(props) === true) ? <Link to="/reservation-confirmation" className="no_deco_link where_is_padding"><Button type="button" text="submit" customClickEvent={submit_handler} /></Link> : <Button 
             type="button" 
             text="submit" 
             disabled_button="disabled"/> }

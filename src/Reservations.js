@@ -6,6 +6,19 @@ import "@fontsource/markazi-text";
 
 export default function Reservations() {
 
+    useEffect(() => {
+        const script = document.createElement('script');
+      
+        script.src = "https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js";
+        script.async = true;
+      
+        document.body.appendChild(script);
+      
+        return () => {
+          document.body.removeChild(script);
+        }
+      }, []);
+
     const [date, setDate] = useState();
     const [time, setTime] = useState("");
     const [guestCount, setGuestCount] = useState(0);
@@ -15,7 +28,7 @@ export default function Reservations() {
         return availableTimes;
     }
 
-    const initializeTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+    const initializeTimes = (["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
 
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
 

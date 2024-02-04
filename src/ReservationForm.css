@@ -34,3 +34,7 @@ form .hey_why_is_react_not_making_a_wrapper {
     display: flex;
     justify-content: center;
 }
+
+.where_is_padding .the_button p{
+    margin: 1svh 1svw;
+}
