@@ -5,10 +5,10 @@ import {useState, useReducer, useEffect} from "react";
 
 export default function Reservations() {
 
-    const [date, setDate] = useState(undefined);
-    const [time, setTime] = useState(undefined);
+    const [date, setDate] = useState();
+    const [time, setTime] = useState("");
     const [guestCount, setGuestCount] = useState(0);
-    const [occasion, setOccasion] = useState(undefined);
+    const [occasion, setOccasion] = useState("");
 
     const updateTimes = (availableTimes, action) => {
         return availableTimes;

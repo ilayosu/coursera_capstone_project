@@ -13,6 +13,12 @@
     cursor: pointer;
 }
 
+.disabled {
+    background-color: #edefee;
+    color: #333;
+    cursor: default;
+}
+
 .button_text {
     font-family: "Karla";
     font-size: 1svw;

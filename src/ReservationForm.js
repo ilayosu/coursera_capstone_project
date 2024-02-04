@@ -9,10 +9,6 @@ function form_valid(props) {
 
 export default function ReservationForm(props) {
 
-    const button_style_rewrite = {
-        backgroundColor: "#edefee",
-    }
-
     const submit_handler = (e) => {
         alert(form_valid(props));
         if (form_valid(props) === true) form_clear();
@@ -60,7 +56,10 @@ export default function ReservationForm(props) {
                 </select>
             </label>
             <div className="hey_why_is_react_not_making_a_wrapper">
-            <Button type="button" text="submit" customClickEvent={submit_handler} />
+            {(form_valid(props) === true) ? <Button type="button" text="submit" customClickEvent={submit_handler} /> : <Button 
+            type="button" 
+            text="submit" 
+            disabled_button="disabled"/> }
             </div>
         </form>
     )
