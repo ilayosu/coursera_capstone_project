@@ -50,3 +50,8 @@ footer {
 .footer_grid p {
     font-weight: 700;
 }
+
+.footer_nav_list li .no_deco_link {
+    color: white;
+    text-decoration: underline;
+}

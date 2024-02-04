@@ -2,6 +2,7 @@ import "@fontsource/markazi-text";
 import '@fontsource/karla';
 import "./Footer.css";
 import photo from "./images/restauranfood.jpg"
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -10,10 +11,10 @@ export default function Footer() {
                 <img src={photo} className="footer_photo"/>
                 <ul className="footer_nav_list">
                         <p>Doormat Navigation</p>
-                        <li>Home</li>
+                        <li><Link className="no_deco_link" to="/">Home</Link></li>
                         <li>About</li>
                         <li>Menu</li>
-                        <li>Reservations</li>
+                        <li><Link className="no_deco_link" to="/reservation-screen">Reservations</Link></li>
                         <li>Order Online</li>
                         <li>Login</li>
                 </ul>

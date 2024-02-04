@@ -13,10 +13,10 @@ export default function Header() {
             </Link>
             <nav>
                 <ul className="navbar">
-                    <li className="home">Home</li>
+                    <li className="home"><Link className="no_deco_link" to="/">Home</Link></li>
                     <li className="about">About</li>
                     <li className="the_menu">Menu</li>
-                    <li className="reserve">Reservations</li>
+                    <li className="reserve"><Link className="no_deco_link" to="/reservation-screen">Reservations</Link></li>
                     <li className="order">Order Online</li>
                     <li className="log_in">Log in</li>
                 </ul>
